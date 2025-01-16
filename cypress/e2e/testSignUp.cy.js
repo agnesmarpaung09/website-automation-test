@@ -11,7 +11,7 @@ describe("Sign Up Test", () => {
     signUpPage.fillPassword("123_Agnes");
     signUpPage.submit();
 
-    // Assert sign up success
+    // Verifikasi bahwa sign up berhasil
     cy.get(".sweet-alert").should("contain", "Sign up successful");
   });
 });
